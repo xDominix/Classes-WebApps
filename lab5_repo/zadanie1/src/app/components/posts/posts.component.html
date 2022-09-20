@@ -1,0 +1,16 @@
+
+<h1>Here are posts.</h1>
+
+  <div>
+    <div class="container" *ngFor="let post of posts">
+      <div class="box">
+        <h4 class="card-title">{{ post.title | uppercase}}</h4>
+        <small> <strong>User ID: </strong> {{ post.userId }}</small>
+        <p>{{ post.body }}</p>
+      </div>
+    </div>
+
+
+
+  </div>
+  
