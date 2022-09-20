@@ -1,0 +1,29 @@
+body { padding: 0; margin: 0; }
+
+#menuBar
+{
+    width: 100%;
+    display: flex;
+    background-color:cornflowerblue;
+
+}
+
+#menuBar>a
+{
+    background-color: lightskyblue;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    color: rgb(53, 119, 240);
+}
+
+#menuBar>a:hover
+{
+    background-color: white;
+}
+
+#menuBar a.active
+{
+    background-color: rgb(26, 40, 49);
+}
