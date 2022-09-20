@@ -1,0 +1,12 @@
+
+<select class="custom-select" (change)="changeMarka($event)">
+    <option *ngFor="let item of carsList;index as i" value="{{i}}">{{item[0]}}</option>
+ </select>
+
+ <select class="custom-select" (change)="changeModel($event)" >
+    <option *ngFor="let i of getModelArray()" value="{{i}}">{{carsList[marka][1][i][0]}}</option>
+ </select>
+ 
+   <button class="colorPicker" *ngFor="let i of getKolorArray()"  id="{{carsList[marka][1][model][1][i]}}" value="{{i}}" (click)="changeKolor($event)"></button>
+
+   

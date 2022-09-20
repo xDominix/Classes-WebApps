@@ -1,0 +1,41 @@
+*
+{
+    margin: 10px;
+    font-size: 25px;
+}
+.colorPicker
+{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+#czerwony
+{
+    background-color: red;
+}
+
+#zielony
+{
+    background-color:green;
+}
+
+#zloty
+{
+    background-color:yellow;
+}
+
+#czarny
+{
+    background-color:black;
+}
+
+#bialy
+{
+    background-color: white;
+}
+
+#niebieski
+{
+    background-color: blue;
+}

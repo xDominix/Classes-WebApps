@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.item1 {
+  position: relative;
+
+  float: left;
+  width: 40%;
+  margin: 5px;
+}
+
+.item2 {
+  position: relative;
+
+  float: left;
+  width: 40%;
+  margin: 5px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow: hidden;
+}
+#overlay1
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #00000086;
+    transition: .5s ease;
+}
+
+.item1:hover #overlay1 {
+    height: 20%;
+}
+
+#overlay2
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #40ffa680;
+
+}
+
+.item2:hover #overlay2 {
+  opacity: 1;
+}
+#lupa
+{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 10%;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+
+    <div class="item1">
+        <img src="Tapeta 0529.jpeg">
+        <div id="overlay1">
+            <div class="text"style="color: white;">Opis zdjecia</div>
+        </div>
+    </div>
+      
+    <div class="item2">
+        <img src="Tapeta 0760.jpg">
+        <div id="overlay2">
+            <img id = "lupa"  src="lupa_czarna.png">
+            <div class="text" style="color: black;top: 55%;"><b>Zobacz album</b></div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

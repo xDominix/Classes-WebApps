@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    html{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: greenyellow;
+        
+    }
+    .menu{
+        position: fixed;
+        width: 200px;
+        
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .item>a
+    {
+        text-decoration: none;
+    }
+    .item>a:hover
+    {
+    background-color: firebrick;
+    }
+
+    .item:target .options{
+    display: block;
+    }
+
+    .options{
+        background: darkslateblue;
+        overflow: hidden;
+        display: none;
+    }
+
+    .main{
+        position: relative;
+        padding: 15px;
+        display: block;
+        background-color: coral;
+        color: white;
+        z-index: 10;
+    }
+    
+    .main:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right:8px solid transparent;
+    border-top:10px solid coral;
+    right: 15px;
+    bottom: -10px;
+    z-index: 9;
+    }
+
+    .main2{
+        position: relative;
+        padding: 15px;
+        display: block;
+        background-color: coral;
+        color: white;
+        z-index: 10;
+    }
+    .options a{
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .options a:hover
+    {
+        background-color: indigo;
+    }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="item" id="myaccount">
+            <a href="#myaccount" class="main">My Account</a>
+            <div class="options">
+                <a href="">item1</a>
+                <a href="">item2</a>
+                <a href="">item3</a>
+            </div>
+        </div>
+        <div class="item" id="about">
+            <a href="#about" class="main">About</a>
+            <div class="options">
+                <a href="">item1</a>
+                <a href="">item2</a>
+            </div>
+        </div>
+        <div class="item" id="support">
+            <a href="#support" class="main">Support</a>
+            <div class="options">
+                <a href="">item1</a>
+            </div>
+        </div>
+        <div class="item" id="logout">
+            <a href="#logout" class="main2">Log Out</a>
+            <div class="options">
+                <a href="">item1</a>
+                <a href="">item2</a>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+</body>
+</html>

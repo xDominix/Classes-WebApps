@@ -1,0 +1,75 @@
+html
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: lightseagreen;   
+}
+.box
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#section2
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#section1
+{
+    text-align:center;
+}
+
+#section1 hr{
+    width: 50%;
+    border-bottom: 2px solid black;
+}
+
+#card
+{
+    width: 500px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    border-radius: 30px;
+    text-align:center;
+background-color: lightgreen;
+box-shadow: black 8px 8px 4px;
+}
+#description
+{
+    text-align: justify;
+    padding: 5%;
+}
+
+#image
+{
+    
+    padding:3%;
+    display: flex;
+    justify-content: center;
+
+
+}
+#img
+{
+    width: 50%;
+    border:lightseagreen solid;
+    border-width: 10px;
+    border-radius: 50%;
+}
+
+#buttons>button
+{
+   background-color: white;
+}
+
+#buttons
+{
+    margin-top: auto;
+}

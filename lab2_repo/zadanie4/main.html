@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html
+        {
+            background-color:rgba(135, 175, 250, 0.877);
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        .container
+        {
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        .item
+        {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: lightskyblue;
+            border-style: solid;
+            border-radius: 35px;
+            overflow: hidden;
+            box-shadow: black 10px 10px 5px;
+        }
+        @media (max-width: 2000px){
+        .item
+        {
+          width: 30%;
+        }
+      }
+      @media (max-width: 1100px){
+        .item
+        {
+          width: 45%;
+        }
+        
+        }
+        @media (max-width: 700px){
+        .item
+        {
+          width: 100%;
+        }
+        
+        }
+
+        #image>img
+        {
+            width: 100%;
+            height: auto;
+        }
+        #text
+        {
+            border-style: solid;
+            border-width: 0 0 1px 0;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: justify ;
+        }
+        #text>div>h1
+        {
+            text-align: center;
+        }
+        #info
+        {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+            
+        }
+        
+        .read
+        {
+            border-style: solid;
+            border-radius: 5px;
+            background-color:dodgerblue;
+        }
+
+        .read:hover
+        {
+            background-color:rgba(30, 143, 255, 0.541);
+        }
+        .stats
+        {
+            display:flex; flex-direction: column; justify-content: space-around;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <div id="image">
+                <img src="Tapeta_0019_w0v23p_c_scale,w_759.jpg"
+                alt="">
+            </div>
+            <div id="text">
+                <div><h1>Zdjecie 1</h1></div>
+                
+                <div style="color:rgba(0, 0, 0, 0.5);"><h2 >To zdjecie przedstawia... </h2></div>
+                <div><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere facilis alias at maiores recusandae, dolor reprehenderit repellendus, aliquid, quam doloribus ex amet. Distinctio voluptatem vero molestias quidem quaerat sapiente.</h3>
+                </div>
+            </div>
+            <div id="info">
+                <div class="read"><p style="margin: 20px;">Read Article</p></div>
+                <div class="stats">
+                    <div>
+                        <div style="height: 20px; float: left; margin-right: 5px;"><img style="height: 100%;" src="like-1767386-1505250.png"></div>
+                        13 likes
+                    </div>
+                    <div> 
+                        <div style="height: 20px; float: left;margin-right: 5px;"><img style="height: 100%;" src="comment-2551199-2136583.png"></div>
+                        125 comments</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="image">
+                <img style="border-radius: 30px 30px 0 0;" src="Tapeta_0212_kortfb_c_scale,w_834.jpg"
+                alt="">
+            </div>
+            <div id="text">
+                <div><h1>Zdjecie 2</h1></div>
+                
+                <div style="color:rgba(0, 0, 0, 0.5);"><h2 >To zdjecie przedstawia... </h2></div>
+                <div><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere facilis alias at maiores recusandae, dolor reprehenderit repellendus, aliquid, quam doloribus ex amet. Distinctio voluptatem vero molestias quidem quaerat sapiente.</h3>
+                </div>
+            </div>
+            <div id="info">
+                <div class="read"><p style="margin: 20px;">Read Article</p></div>
+                <div  class="stats" >
+                    <div>
+                        <div style="height: 20px; float: left; margin-right: 5px;"><img style="height: 100%;" src="like-1767386-1505250.png"></div>
+                        14 likes</div>
+                    <div>
+                        <div style="height: 20px; float: left;margin-right: 5px;"><img style="height: 100%;" src="comment-2551199-2136583.png"></div>
+                        1 comments</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="image">
+                <img style="border-radius: 30px 30px 0 0;" src="Tapeta_0276_wte0th_c_scale,w_903.jpg"
+                alt="">
+            </div>
+            <div id="text">
+                <div><h1>Zdjecie 3</h1></div>
+                
+                <div style="color:rgba(0, 0, 0, 0.5);"><h2 >To zdjecie przedstawia... </h2></div>
+                <div><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere facilis alias at maiores recusandae, dolor reprehenderit repellendus, aliquid, quam doloribus ex amet. Distinctio voluptatem vero molestias quidem quaerat sapiente.</h3>
+                </div>
+            </div>
+            <div id="info">
+                <div class="read"><p style="margin: 20px;">Read Article</p></div>
+                <div  class="stats" >
+                    <div>
+                        <div style="height: 20px; float: left; margin-right: 5px;"><img style="height: 100%;" src="like-1767386-1505250.png"></div>
+                        164 likes</div>
+                    <div>
+                        <div style="height: 20px; float: left;margin-right: 5px;"><img style="height: 100%;" src="comment-2551199-2136583.png"></div>
+                        45 comments</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="image">
+                <img style="border-radius: 30px 30px 0 0;" src="Tapeta_0352_v3nm86_c_scale,w_757.jpg"
+                alt="">
+            </div>
+            <div id="text">
+                <div><h1>Zdjecie 4</h1></div>
+                
+                <div style="color:rgba(0, 0, 0, 0.5);"><h2 >To zdjecie przedstawia... </h2></div>
+                <div><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere facilis alias at maiores recusandae, dolor reprehenderit repellendus, aliquid, quam doloribus ex amet. Distinctio voluptatem vero molestias quidem quaerat sapiente.</h3>
+                </div>
+            </div>
+            <div id="info">
+                <div class="read"><p style="margin: 20px;">Read Article</p></div>
+                <div  class="stats">
+                    <div>
+                        <div style="height: 20px; float: left; margin-right: 5px;"><img style="height: 100%;" src="like-1767386-1505250.png"></div>
+                        164 likes</div>
+                    <div>
+                        <div style="height: 20px; float: left;margin-right: 5px;"><img style="height: 100%;" src="comment-2551199-2136583.png"></div>
+                        0 comments</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="image">
+                <img style="border-radius: 30px 30px 0 0;" src="Tapeta_0529_ybxral_c_scale,w_943.jpg"
+                alt="">
+            </div>
+            <div id="text">
+                <div><h1>Zdjecie 5</h1></div>
+                
+                <div style="color:rgba(0, 0, 0, 0.5);"><h2 >To zdjecie przedstawia... </h2></div>
+                <div><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere facilis alias at maiores recusandae, dolor reprehenderit repellendus, aliquid, quam doloribus ex amet. Distinctio voluptatem vero molestias quidem quaerat sapiente.</h3>
+                </div>
+            </div>
+            <div id="info">
+                <div class="read"><p style="margin: 20px;">Read Article</p></div>
+                <div  class="stats" >
+                    <div>
+                        <div style="height: 20px; float: left; margin-right: 5px;"><img style="height: 100%;" src="like-1767386-1505250.png"></div>
+                        14 likes</div>
+                    <div>
+                        <div style="height: 20px; float: left;margin-right: 5px;"><img style="height: 100%;" src="comment-2551199-2136583.png"></div>
+                        1 comments</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="image">
+                <img style="border-radius: 30px 30px 0 0;" src="Tapeta_0536_vwrjab_c_scale,w_744.jpg"
+                alt="">
+            </div>
+            <div id="text">
+                <div><h1>Zdjecie 6</h1></div>
+                
+                <div style="color:rgba(0, 0, 0, 0.5);"><h2 >To zdjecie przedstawia... </h2></div>
+                <div><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere facilis alias at maiores recusandae, dolor reprehenderit repellendus, aliquid, quam doloribus ex amet. Distinctio voluptatem vero molestias quidem quaerat sapiente.</h3>
+                </div>
+            </div>
+            <div id="info">
+                <div class="read"><p style="margin: 20px;">Read Article</p></div>
+                <div class="stats">
+                    <div>
+                        <div style="height: 20px; float: left; margin-right: 5px;"><img style="height: 100%;" src="like-1767386-1505250.png"></div>
+                        57 likes</div>
+                    <div>
+                        <div style="height: 20px; float: left;margin-right: 5px;"><img style="height: 100%;" src="comment-2551199-2136583.png"></div>
+                        445 comments</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="image">
+                <img style="border-radius: 30px 30px 0 0;" src="Tapeta_0726_lunwjp_c_scale,w_750.jpg"
+                alt="">
+            </div>
+            <div id="text">
+                <div><h1>Zdjecie 7</h1></div>
+                
+                <div style="color:rgba(0, 0, 0, 0.5);"><h2 >To zdjecie przedstawia... </h2></div>
+                <div><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere facilis alias at maiores recusandae, dolor reprehenderit repellendus, aliquid, quam doloribus ex amet. Distinctio voluptatem vero molestias quidem quaerat sapiente.</h3>
+                </div>
+            </div>
+            <div id="info">
+                <div class="read"><p style="margin: 20px;">Read Article</p></div>
+                <div class="stats">
+                    <div>
+                        <div style="height: 20px; float: left; margin-right: 5px;"><img style="height: 100%;" src="like-1767386-1505250.png"></div>
+                        34 likes</div>
+                    <div>
+                        <div style="height: 20px; float: left;margin-right: 5px;"><img style="height: 100%;" src="comment-2551199-2136583.png"></div>
+                        345 comments</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="image">
+                <img style="border-radius: 30px 30px 0 0;" src="Tapeta_0760_uk9hht_c_scale,w_750.jpg"
+                alt="">
+            </div>
+            <div id="text">
+                <div><h1>Zdjecie 8</h1></div>
+                
+                <div style="color:rgba(0, 0, 0, 0.5);"><h2 >To zdjecie przedstawia... </h2></div>
+                <div><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere facilis alias at maiores recusandae, dolor reprehenderit repellendus, aliquid, quam doloribus ex amet. Distinctio voluptatem vero molestias quidem quaerat sapiente.</h3>
+                </div>
+            </div>
+            <div id="info">
+                <div class="read"><p style="margin: 20px;">Read Article</p></div>
+                <div class="stats" >
+                    <div>
+                        <div style="height: 20px; float: left; margin-right: 5px;"><img style="height: 100%;" src="like-1767386-1505250.png"></div>
+                        45 likes</div>
+                    <div>
+                        <div style="height: 20px; float: left;margin-right: 5px;"><img style="height: 100%;" src="comment-2551199-2136583.png"></div>
+                        35 comments</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div id="image">
+                <img style="border-radius: 30px 30px 0 0;" src="Tapeta_0782_m7zb4e_c_scale,w_733.jpg"
+                alt="">
+            </div>
+            <div id="text">
+                <div><h1>Zdjecie 9</h1></div>
+                
+                <div style="color:rgba(0, 0, 0, 0.5);"><h2 >To zdjecie przedstawia... </h2></div>
+                <div><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id facere facilis alias at maiores recusandae, dolor reprehenderit repellendus, aliquid, quam doloribus ex amet. Distinctio voluptatem vero molestias quidem quaerat sapiente.</h3>
+                </div>
+            </div>
+            <div id="info">
+                <div class="read"><p style="margin: 20px;">Read Article</p></div>
+                <div class="stats" >
+                    <div>
+                        <div style="height: 20px; float: left; margin-right: 5px;"><img style="height: 100%;" src="like-1767386-1505250.png"></div>
+                        344 likes</div>
+                    <div>
+                        <div style="height: 20px; float: left;margin-right: 5px;"><img style="height: 100%;" src="comment-2551199-2136583.png"></div>
+                        465 comments</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

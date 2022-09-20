@@ -1,0 +1,57 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#zombie {
+    position: absolute;
+    left:110%;
+    height: 312px;
+    width: 200px;
+    background: url("images/walkingdead.png");
+    z-index: 10;
+    transition: left 5s linear;
+}
+
+#bg
+{
+    background-image: url('images/board-bg.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor:url('images/4849131.png') 64 64,pointer;
+}
+
+#startButton
+{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 20px;
+   left: 20px;
+}
+
+#score
+{
+    position: absolute;
+    right: 20px;
+    font-size: 100px;
+    font-family:monospace;
+    color: white;
+}
+
+#hearts
+{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% ,0%);
+    display: flex;
+    justify-content: center;
+}
+#hearts>img
+{
+width: 50px;
+margin:10px;
+}
